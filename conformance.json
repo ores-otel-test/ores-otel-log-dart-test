@@ -1,15 +1,22 @@
 {
+  "capabilities": [
+    "record-schema",
+    "api-manifest",
+    "context-isolation",
+    "otel-explicit",
+    "no-monkey-patching",
+    "supabase-client",
+    "lifecycle",
+    "concurrency"
+  ],
   "language": "dart",
-  "matrixVersion": "ores.otel.test-repository/v1",
   "name": "ores-otel-log-dart-test",
-  "requireExactHeadChecks": true,
-  "requireNoMonkeyPatching": true,
   "runtime": "Dart stable and Flutter stable",
   "sources": [
     "ores-otel/ores.otel.log",
     "ORESoftware/next-loggers.ts"
   ],
-  "status": "seeded",
+  "status": "planned",
   "testCommand": "dart test && dart analyze",
   "toolchain": "dart and flutter"
 }
