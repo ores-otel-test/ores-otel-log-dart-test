@@ -11,7 +11,7 @@
     "concurrency"
   ],
   "exact_heads": {
-    "canonical": "be37556eeeaa77c2fc57feda96239b69cca8e9ac",
+    "canonical": "ec723cd4c64b247534329826ad8f7988525c1a48",
     "legacy": "be37556eeeaa77c2fc57feda96239b69cca8e9ac"
   },
   "language": "dart",
