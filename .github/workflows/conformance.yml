@@ -67,4 +67,4 @@ jobs:
           cd source/sdk/dart
           dart pub get
           dart analyze
-          dart test
+          dart run test/conformance.dart
