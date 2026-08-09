@@ -23,7 +23,7 @@ jobs:
         include:
           - role: canonical
             repository: ores-otel/ores.otel.log
-            ref: be37556eeeaa77c2fc57feda96239b69cca8e9ac
+            ref: ec723cd4c64b247534329826ad8f7988525c1a48
           - role: legacy
             repository: ORESoftware/next-loggers.ts
             ref: be37556eeeaa77c2fc57feda96239b69cca8e9ac
@@ -67,4 +67,8 @@ jobs:
           cd source/sdk/dart
           dart pub get
           dart analyze
-          dart run test/conformance.dart
+          if [[ -f test/conformance.dart ]]; then
+            dart run test/conformance.dart
+          else
+            dart test
+          fi
